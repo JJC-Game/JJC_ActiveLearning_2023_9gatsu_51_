@@ -75,7 +75,7 @@ class AppUserController extends Controller
             $result_string = "";
 
             $rand_num = mt_rand(1, 10000);
-            $jouyo = $rand_num % 32;
+            $jouyo = $rand_num % 14;
             $result_string = $result_string.$jouyo.",";
             $jouyo_flag = 1 << $jouyo;
             $app_user->has_chara_flag = $has_chara_flag | $jouyo_flag;

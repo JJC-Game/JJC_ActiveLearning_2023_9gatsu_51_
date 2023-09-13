@@ -8,7 +8,7 @@ using static P3_UserDataManager;
 public class PHPConnectManager : MonoBehaviour
 {
     protected string serverURL = "http://18.178.60.234/students/active_learning/";
-    protected string userPHPFolderPath = "user99/sample_laravel/";
+    protected string userPHPFolderPath = "user51/sample_laravel/";
     protected string phpConnectResultText = "";
     private bool isConnecting = false;
     protected int calledUserId = 0;

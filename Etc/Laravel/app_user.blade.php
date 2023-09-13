@@ -1,4 +1,1 @@
-ユーザーID　{{ $app_user->id }}
-ユーザー名　{{ $app_user->name }}
-所持ガチャポイント　{{ $app_user->gacha_point }}
-所持キャラフラグ　{{ $app_user->has_chara_flag }}
+{{ $app_user->id }},{{ $app_user->name }},{{ $app_user->gacha_point }},{{ $app_user->has_chara_flag }}
