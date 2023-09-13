@@ -75,4 +75,29 @@ public class UserApplication : MonoBehaviour
         }
     }
 
+    public PHPConnectManager _phpConnectManager;
+    static public PHPConnectManager phpConnectManager
+    {
+        get
+        {
+            if (S._phpConnectManager == null)
+            {
+                S._phpConnectManager = GameObject.Find("PHPConnectManager").GetComponent<PHPConnectManager>();
+            }
+            return S._phpConnectManager;
+        }
+    }
+
+    public P3_UserDataManager _p3_userDataManager;
+    static public P3_UserDataManager p3_userDataManager
+    {
+        get
+        {
+            if (S._p3_userDataManager == null)
+            {
+                S._p3_userDataManager = GameObject.Find("UserDataManager").GetComponent<P3_UserDataManager>();
+            }
+            return S._p3_userDataManager;
+        }
+    }
 }

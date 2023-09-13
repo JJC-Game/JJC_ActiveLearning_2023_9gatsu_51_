@@ -81,7 +81,7 @@ public class FixCharaManager : MonoBehaviour
         for (int i = 0; i < GetFixCharaNum(); i++)
         {
             FixCharaData data = GetFixCharaData(i);
-            Debug.Log(data.id + "," + data.name + "," + data.imagePath);
+//            Debug.Log(data.id + "," + data.name + "," + data.imagePath);
         }
     }
 
