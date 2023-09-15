@@ -100,4 +100,56 @@ public class UserApplication : MonoBehaviour
             return S._p3_userDataManager;
         }
     }
+
+    public ItemListRenderer _itemListRenderer;
+    static public ItemListRenderer itemListRenderer
+    {
+        get
+        {
+            if (S._itemListRenderer == null)
+            {
+                S._itemListRenderer = GameObject.Find("UIParts_ItemList").GetComponent<ItemListRenderer>();
+            }
+            return S._itemListRenderer;
+        }
+    }
+
+    public P4_UserDataManager _p4_userDataManager;
+    static public P4_UserDataManager p4_userDataManager
+    {
+        get
+        {
+            if (S._p4_userDataManager == null)
+            {
+                S._p4_userDataManager = GameObject.Find("UserDataManager").GetComponent<P4_UserDataManager>();
+            }
+            return S._p4_userDataManager;
+        }
+    }
+    
+    public FixItemManager _fixItemManager;
+    static public FixItemManager fixItemManager
+    {
+        get
+        {
+            if (S._fixItemManager == null)
+            {
+                S._fixItemManager = GameObject.Find("Common").GetComponent<FixItemManager>();
+            }
+            return S._fixItemManager;
+        }
+    }
+
+    public P4_PHPConnectManager _p4_phpConnectManager;
+    static public P4_PHPConnectManager p4_phpConnectManager
+    {
+        get
+        {
+            if (S._p4_phpConnectManager == null)
+            {
+                S._p4_phpConnectManager = GameObject.Find("PHPConnectManager").GetComponent<P4_PHPConnectManager>();
+            }
+            return S._p4_phpConnectManager;
+        }
+    }    
 }

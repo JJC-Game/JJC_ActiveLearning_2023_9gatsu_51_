@@ -1,6 +1,6 @@
 @ECHO OFF
 SET BAT_PATH=%~dp0
-SET POWERSHELL_PATH=%BAT_PATH%ConvertCharaData.ps1
+SET POWERSHELL_PATH=%BAT_PATH%ConvertItemData.ps1
 PowerShell -Command "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;"
-ECHO %POWERSHELL_PATH%‚ğÀs‚µ‚Ü‚·.
+ECHO %POWERSHELL_PATH%ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½Ü‚ï¿½.
 PowerShell -File %POWERSHELL_PATH%
